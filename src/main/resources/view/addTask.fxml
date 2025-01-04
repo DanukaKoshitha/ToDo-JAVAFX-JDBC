@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.homePageFormController">
+   <children>
+      <Pane layoutX="286.0" prefHeight="400.0" prefWidth="314.0" style="-fx-background-color: #130f40;">
+         <children>
+            <ScrollPane fx:id="scrollComplete" layoutX="35.0" layoutY="107.0" prefHeight="226.0" prefWidth="244.0">
+               <content>
+                  <VBox fx:id="completed" prefHeight="222.0" prefWidth="244.0" />
+               </content>
+            </ScrollPane>
+            <Label layoutX="101.0" layoutY="28.0" prefHeight="17.0" prefWidth="130.0" text="My Day" textFill="#47b48e">
+               <font>
+                  <Font name="System Bold Italic" size="33.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane prefHeight="400.0" prefWidth="291.0" style="-fx-background-color: #30336b;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#535c68" height="64.0" layoutX="24.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="244.0" />
+            <ImageView fitHeight="64.0" fitWidth="57.0" layoutX="24.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/userImage.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="96.0" layoutY="38.0" prefHeight="17.0" prefWidth="162.0" text="DHANUKA KOSHITHA" />
+            <Label layoutX="96.0" layoutY="56.0" prefHeight="17.0" prefWidth="162.0" text="danukakoshitha@gmail.com" />
+            <JFXButton fx:id="btn" layoutX="84.0" layoutY="354.0" onAction="#btnAddTaskOnAction" prefHeight="29.0" prefWidth="123.0" style="-fx-background-color: #0c2461;" text="+  Add Task" textFill="#df0505">
+               <font>
+                  <Font name="Lucida Bright" size="15.0" />
+               </font>
+            </JFXButton>
+            <ScrollPane fx:id="pane" layoutX="24.0" layoutY="105.0" prefHeight="226.0" prefWidth="244.0">
+               <content>
+                  <VBox fx:id="vBoxToDoTask" prefHeight="226.0" prefWidth="242.0" />
+               </content></ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addTaskFormController">
+   <children>
+
+      <Pane opacity="0.43" prefHeight="402.0" prefWidth="602.0" style="-fx-background-color: #F8EFBA;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="62.0" layoutX="31.0" layoutY="25.0" stroke="#c42929" strokeType="INSIDE" width="537.0" />
+            <Label alignment="CENTER" layoutX="194.0" layoutY="33.0" prefHeight="47.0" prefWidth="213.0" text="TO-DO-APP" textFill="#181818">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtDescription" layoutX="101.0" layoutY="201.0" prefHeight="62.0" prefWidth="398.0" promptText="Task Description" style="-fx-background-color: #fad390;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextArea>
+            <JFXButton fx:id="btn" layoutX="264.0" layoutY="343.0" onAction="#btnAddTaskOnAction" style="-fx-background-color: #be2edd;" text="Add Task">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <DatePicker fx:id="txtDate" layoutX="214.0" layoutY="292.0" style="-fx-background-color: #fad390;" />
+            <TextField fx:id="txtTitle" layoutX="214.0" layoutY="144.0" promptText="Task Titel">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="233.0" layoutY="108.0" text="Task ID  :  ">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTaskID" layoutX="296.0" layoutY="108.0" prefHeight="17.0" prefWidth="46.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
