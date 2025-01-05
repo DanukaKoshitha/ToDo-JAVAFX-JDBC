@@ -1,0 +1,65 @@
+/* style.css */
+.root {
+    -fx-background-color: #2c2c54; /* Dark purple background */
+}
+
+/* Custom CheckBox Style */
+.custom-checkbox {
+    -fx-border-color: #01a3a4;
+    -fx-border-width: 4px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #fbc531;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-text-fill: #333333;
+    -fx-effect: innershadow(gaussian, #888888, 5, 0, 1, 1);
+    -fx-alignment: center-left;
+}
+
+/* Custom Label Style */
+.custom-label {
+    -fx-text-fill: #555555;
+    -fx-font-size: 12px;
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-opacity: 0.9;
+}
+
+/* Container for Task Details (Checkbox + Labels) */
+.task-container {
+    -fx-spacing: 20px;
+    -fx-padding: 10px;
+    -fx-alignment: center-left;
+    -fx-background-color: #f4f4f4;
+    -fx-border-radius: 10px;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, #cccccc, 5, 0, 1, 1);
+}
+
+/* Hover Effect for Task Container */
+.task-container:hover {
+    -fx-background-color: #e0e0e0;
+    -fx-border-color: #01a3a4;
+    -fx-cursor: hand;
+}
+
+/* Task Container on Selection */
+.task-container:selected {
+    -fx-background-color: #b3e0e0;
+    -fx-border-color: #009999;
+}
+
+/* Styling for Task Text (Description and Due Date) */
+.task-container .custom-label {
+    -fx-padding: 5px 10px;
+    -fx-font-weight: bold;
+}
+
+/* Styling for the VBox */
+.vbox {
+    -fx-padding: 10px;
+    -fx-alignment: top-left;
+    -fx-spacing: 10px;
+}
+

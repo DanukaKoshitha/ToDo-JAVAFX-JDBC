@@ -17,12 +17,12 @@
          <children>
             <ScrollPane fx:id="scrollComplete" layoutX="35.0" layoutY="107.0" prefHeight="226.0" prefWidth="244.0">
                <content>
-                  <VBox fx:id="completed" prefHeight="222.0" prefWidth="244.0" />
+                  <VBox fx:id="completed" prefHeight="222.0" prefWidth="244.0" style="-fx-background-color: #303952;" />
                </content>
             </ScrollPane>
-            <Label layoutX="101.0" layoutY="28.0" prefHeight="17.0" prefWidth="130.0" text="My Day" textFill="#47b48e">
+            <Label layoutX="50.0" layoutY="26.0" prefHeight="49.0" prefWidth="244.0" text="Completed ⛳🏆" textFill="#47b48e">
                <font>
-                  <Font name="System Bold Italic" size="33.0" />
+                  <Font name="System Bold Italic" size="31.0" />
                </font>
             </Label>
          </children></Pane>
@@ -36,15 +36,20 @@
             </ImageView>
             <Label layoutX="96.0" layoutY="38.0" prefHeight="17.0" prefWidth="162.0" text="DHANUKA KOSHITHA" />
             <Label layoutX="96.0" layoutY="56.0" prefHeight="17.0" prefWidth="162.0" text="danukakoshitha@gmail.com" />
-            <JFXButton fx:id="btn" layoutX="84.0" layoutY="354.0" onAction="#btnAddTaskOnAction" prefHeight="29.0" prefWidth="123.0" style="-fx-background-color: #0c2461;" text="+  Add Task" textFill="#df0505">
+            <JFXButton fx:id="btn" layoutX="153.0" layoutY="354.0" onAction="#btnAddTaskOnAction" prefHeight="29.0" prefWidth="115.0" style="-fx-background-color: #0c2461;" text="+  Add Task" textFill="#df0505">
                <font>
                   <Font name="Lucida Bright" size="15.0" />
                </font>
             </JFXButton>
             <ScrollPane fx:id="pane" layoutX="24.0" layoutY="105.0" prefHeight="226.0" prefWidth="244.0">
                <content>
-                  <VBox fx:id="vBoxToDoTask" prefHeight="226.0" prefWidth="242.0" />
+                  <VBox fx:id="vBoxToDoTask" prefHeight="226.0" prefWidth="242.0" style="-fx-background-color: #0a3d62;" />
                </content></ScrollPane>
+            <JFXButton fx:id="btnReload" layoutX="24.0" layoutY="354.0" onAction="#btnReloadOnAction" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #0c2461;" text="Reload" textFill="#df0505">
+               <font>
+                  <Font name="Lucida Bright" size="15.0" />
+               </font>
+            </JFXButton>
          </children>
       </Pane>
    </children>

@@ -24,9 +24,4 @@ public class TaskObject {
         this.dueDate = new SimpleStringProperty(dueDate);
         this.completed = new SimpleBooleanProperty(false);
     }
-
-
-    public Property<Boolean> completedProperty() {
-        return completed;
-    }
 }
